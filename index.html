@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BudgetBench</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/pics.js"></script>
+    <script src="js/graphs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+<div class="nav">
+    <div class="logo">BudgetBench</div>
+    <div class="nav-left">
+        <ul class="nav-items">
+            <li class="nav-item"><a href="#" style="text-decoration: none;color:#5E6282 ">Home</a></li>
+            <li class="nav-item"><a href="#serv" style="text-decoration: none;color:#5E6282 ">Services</a></li>
+            <li class="nav-item"><a href="#top" style="text-decoration: none;color:#5E6282 ">Top Capital Cities</a></li>
+            <li class="nav-item"><a href="#comp" style="text-decoration: none;color:#5E6282 ">Cost Of Living Comparator</a></li>
+            <li class="nav-item"><a href="#about" style="text-decoration: none;color:#5E6282 ">About Us</a></li>
+        </ul>
+    </div>
+</div>
+<div class="hero-section">
+    <div class="hero-first-side">
+        <div class="h1">TOP AFFORDABLE CAPITAL CITIES AROUND THE WORLD</div>
+        <div class="h2">Explore,<br/>compare and live a new life...</div>
+        <div class="h3">Search and compare the cost of living in different cities around the world with all the information you need in one Go</div>
+        <div class="h4">
+            <div class="find-out-more-btn"><a href="#serv" style="text-decoration: none;color:white ">Find Out More</a></div>
+          
+        </div>
+    </div>
+    <div class="hero-second-side">
+        <img src="img/Decore.png" style="width: 250px;" alt="Photo Missing" class="dec"/>
+        <img src="img/person.png"  class="person" alt="Photo Missing"/>
+    </div>
+</div>
+
+
+<div class="our-services" id="serv">
+    <div class="our-services-sec">
+        <img src="img/rect.png" style="width: 80px" alt="Missing"/>
+        <div class="we-offer">We Offer Best Services</div>
+        <img src="img/cross.png" class="cross" alt="Missing"/>
+    </div>
+</div>
+<div class="categories">
+    <div class="cat">
+        <img src="img/pop.png" class="cat-icon" alt="Photo Missing"/>
+        <div class="cat-title">Population</div>
+        <div class="cat-text"> Discover the demographics of your city or town with our population services. Get accurate and up-to-date information about the number of people living the areas you want to move to.</div>
+    </div>
+    <div class="cat">
+        <img src="img/money.png" class="cat-icon" alt="Photo Missing"/>
+        <div class="cat-title">Cost Of Living</div>
+        <div class="cat-text">Planning a move? Make informed decisions with our cost of living services. Learn how much it costs to live in different cities and countries, and get helpful tips for saving money.</div>
+    </div>
+    <div class="cat">
+        <img src="img/Vector2.png" class="cat-icon" alt="Photo Missing"/>
+        <div class="cat-title">Price By Location</div>
+        <div class="cat-text">Compare prices for everyday goods and services in different locations. Our price by location services can help you find the best deals and make informed choices about where to shop</div>
+    </div>
+    <div class="cat">
+        <img src="img/services.png" class="cat-icon" alt="Photo Missing"/>
+        <div class="cat-title">Services</div>
+        <div class="cat-text">Need help with something specific? Our services can connect you with the professionals you need. From home repair and cleaning to pet care and beauty services, we've got you covered</div>
+    </div>
+</div>
+
+<div class="top-destinations" id="top">
+    <div class="top-d">Top Destinations</div>
+    <div class="top-capital">Top Capital Cities</div>
+</div>
+
+<div class="city-cards">
+    <div class="card-c">
+        <img src="https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Photo Missing" class="card-pic"/>
+        <div class="card-text">
+            <div class="c-first-line">
+                <div class="cline">Rome,Italy</div>
+                <div class="cline2">
+                    <span class="loc"></span>
+                   <a href="https://goo.gl/maps/YUaan2UKoPbCmsUc7"><img src="img/Vector2.png" class="loc-img"/><img src="./img/Italy flag.jpg" width="30px" height="auto"/></a>
+                </div>
+            </div>
+            <div class="c-second-line">Population : 10M people</div>
+        </div>
+    </div>
+    <div class="card-c">
+        <img src="https://images.pexels.com/photos/77171/pexels-photo-77171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Photo Missing" class="card-pic"/>
+        <div class="card-text">
+            <div class="c-first-line">
+                <div class="cline">Jerusalem,Israel</div>
+                <div class="cline2">
+                    <span class="loc"></span>
+                    <a href="https://goo.gl/maps/dZZvjADGmUR1gzFX8"><img src="img/Vector2.png" class="loc-img"/><img src="./img/israel flag.jpg" width="30px" height="auto"/></a>
+                </div>
+            </div>
+            <div class="c-second-line">Population : 8M people</div>
+        </div>
+    </div>
+    <div class="card-c">
+        <img src="https://images.pexels.com/photos/819764/pexels-photo-819764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Photo Missing" class="card-pic"/>
+        <div class="card-text">
+            <div class="c-first-line">
+                <div class="cline">California,USA</div>
+                <div class="cline2">
+                    <span class="loc"></span>
+                    <a href="https://goo.gl/maps/d2cCn3z68SqnR6Ft8"><img src="img/Vector2.png" class="loc-img"/><img src="./img/USA flag.jpg" width="30px" height="auto"/>
+                    </a>
+                </div>
+            </div>
+            <div class="c-second-line">Population : 15M people</div>
+        </div>
+    </div>
+    <!-- <img src="img/Decore23.png" alt="Photo Missing" class="wrinkles"/> -->
+</div>
+
+
+<div class="compare" id="comp">
+    <div class="c-text">Capital Cities Comparator</div>
+    <div class="c-small">Easy and Fast</div>
+    <div class="c-bold">Enter Two Countries Below To Compare Them</div>
+    <form class="c-inputs" id="price-form">
+        <div class="c-first">
+            <input type="text" placeholder="Enter country name" class="compare-input" id="country-input" name="country">
+            <input type="text" placeholder="Enter country name" class="compare-input" id="country-input2" name="country2">
+        </div>
+        <button class="compare-submit" type="submit" id="submit">Compare</button>
+    </form>
+</div>
+
+<div class="compared">
+    <div class="co-text">Compare Services</div>
+    <div class="compared-sect">
+        <div class="card-c cs">
+            <img src="https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Photo Missing" class="card-pic" id="image1"/>
+            <div class="card-text" id="price-results" >
+
+                <div class="c-first-line">
+                    <div class="cline">Rome,Italy</div>
+                    <div class="cline2">
+                        <span class="loc">Location</span>
+                        <a href="https://goo.gl/maps/gxSpXiH6gQF5rpDWA"><img src="img/Vector2.png" class="loc-img"/></a>
+                    </div>
+                </div>
+                <div class="c-second-line">Population : 450 000 people</div>
+                <div class="c-3">Cost of Living</div>
+                <div class="c4">Accomodation : $ 500</div>
+                <div class="c4">Transportation : $ 80</div>
+                <div class="c4">Food : $ 300</div>
+                <div class="c4">Basic Utilities : $ 100</div>
+            </div>
+        </div>
+        <div class="card-c cs" >
+            <img src="https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Photo Missing" class="card-pic" id="image2"/>
+            <div class="card-text" id="price-results2">
+                <div class="c-first-line">
+                    <div class="cline">Paris,France</div>
+                    <div class="cline2">
+                        <span class="loc">Location</span>
+                        <a href="https://goo.gl/maps/kC8fvjJmHgbH38BF8"><img src="img/Vector2.png" class="loc-img"/></a>
+                    </div>
+                </div>
+                <div class="c-second-line">Population : 5 000 000 people</div>
+                <div class="c-3">Cost of Living</div>
+                <div class="c4">Accomodation : $ 550</div>
+                <div class="c4">Transportation : $ 90</div>
+                <div class="c4">Food : $ 380</div>
+                <div class="c4">Basic Utilities : $ 100</div>
+            </div>
+        </div>
+        <!-- <img src="img/Decore23.png" alt="Photo Missing" class="wrinkles"/> -->
+    </div>
+
+</div>
+
+
+<div style="width: 100%;height: 400px;margin-left: 10%">
+    <canvas id="myChart" ></canvas>
+</div>
+
+
+
+<div class="find-out">
+    <div class="f-sect1">
+        <div class="find-out-big">SERVICES</div>
+        <div class="sm-sect">
+            <img src="img/g1.png" class="sm-sect-icon" alt="Photo Missing"/>
+            <div class="sm-second">
+                <div class="sm1">Find out city demographics</div>
+                <div class="sm2">We provide demographic, economic, and
+                    other crucial residential quality-of-life data.</div>
+            </div>
+        </div>
+        <div class="sm-sect">
+            <img src="img/g3.png" class="sm-sect-icon" alt="Photo Missing"/>
+            <div class="sm-second">
+                <div class="sm1">Explore City Details</div>
+                <div class="sm2">View detailed information on the city's cost
+                    of living, population, price by location, and
+                    availability of goods and customer services.</div>
+            </div>
+        </div>
+        <div class="sm-sect">
+            <img src="img/g2.png" class="sm-sect-icon" alt="Photo Missing"/>
+            <div class="sm-second">
+                <div class="sm1">City Comparison Report</div>
+                <div class="sm2">Compare the information with other capital
+                    cities and make an informed decision
+                    about where to live or travel based on
+                    your budget and preferences.</div>
+            </div>
+        </div>
+    </div>
+    <div class="f-sect2">
+        <div class="f-sect2-box">
+            <img src="https://images.pexels.com/photos/8206939/pexels-photo-8206939.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Photo Missing" class="w-adventurer">
+            <div class="fs-b">
+                <div class="name">Athens, Greece</div>
+                <div class="pop">Population | 3435363</div>
+                <div class="vector-icons">
+                    <img src="img/send.png" alt="Photo missing" class="vec-img"/>
+                   
+                </div> 
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="meet" id="about">
+    <div class="meet-first">
+        <div class="meet-dev">ABOUT US</div>
+        <div class="meet-dev1">Why use <br/>BudgetBench ?</div>
+    </div>
+    <div class="meet-second">
+        <img src="img/i9.png" class="sam-pic" alt="Photo missing"/>
+        <div class="m-second-text">
+            <div class="mst">Making it easier to make more informed decisions on relocating to your dream city with this intuitive feature, you can explore the world with confidence!</div>
+            <div style="font-weight: bold;color: #5E6282">Samantha Kudzaishe Kelosi</div>
+            <div style="">Grand Baie, Mauritius</div>
+        </div>
+        <div class="l-sect">
+            <div class="m-second-btm">Samantha Kudzaishe Kelosi</div>
+            <div style="">CEO of BudgetBench</div>
+        </div>
+    </div>
+</div>
+
+<div class="get-in" id="contact">GET IN TOUCH WITH US</div>
+
+<div class="email">
+    <div class="email-text">
+        Subscribe to get information, latest news<br/> and other
+        interesting offers about BudgetBench!
+    </div>
+
+
+    <form method="post" action="http://localhost/webdesign/send.php" class="input-sect">
+        <div class="form-se">
+            <input type="text" placeholder="Your name" name="name" class="email-input f12"/>
+            <textarea  placeholder="Your message" name="message"class="email-input f12"></textarea>
+        </div>
+        <div class="form-se">
+            <input type="email" placeholder="Your email" name="email"class="email-input f12"/>
+            <button type="submit" class="submit-btn f12">Subscribe</button>
+        </div>
+    </form>
+</div>
+<img src="img/cross.png" alt="missing" class="float-cross"/>
+
+
+
+
+<footer>
+    <div class="contact-us">CONTACT US</div>
+    <div class="footer1">
+        <div class="logo">BudgetBench</div>
+        <ul class="footer1-list top">
+            <li class="footer1-list-item">Company</li>
+            <li class="footer1-list-item">Contact</li>
+        </ul>
+    </div>
+    <div class="footer2">
+        <ul class="footer1-list ">
+            <li class="discover1">Get full control over your future<br/> and
+                relocate to your dream city.
+            </li>
+            <li class="discover"><a class="btm-link" href="#about">About</a></li>
+            <li class="discover"><a class="btm-link" href="mailto:s.kelosi@alustudent.com">Email</a></li>
+        </ul>
+    </div>
+    <div class="footer3">All rights reserved. Copyright 2023</div>
+</footer>
+
+
+</body>
+</html>
